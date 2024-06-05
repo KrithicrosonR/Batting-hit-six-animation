@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+}
+
+.cricket-field {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    border: 2px solid #388e3c;
+    background-color: #a5d6a7;
+    overflow: hidden;
+}
+
+.batsman {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 50px;
+    height: 100px;
+    background-color: #6d4c41;
+}
+
+.ball {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    display: none;
+}
+
+.six-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate
+    (-50%, -50%);
+    font-size: 3em;
+    color: #f44336;
+    font-weight: bold;
+    display: none;
+}
+
+@keyframes hitAnimation {
+    0% { bottom: 20px; left: 20%; }
+    100% { bottom: 100%; left: 80%; }
+}
