@@ -1,0 +1,1 @@
+# Batting-hit-six-animation
